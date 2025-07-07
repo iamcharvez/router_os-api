@@ -1,10 +1,10 @@
-# mikos_api.py
+# routeros_api.py
 
 **Version:** 1.0.0
 
 ## Overview
 
-`mikos_api.py` is a pure Python client for the MikroTik RouterOS API. It allows you to connect to a RouterOS device, authenticate, and send/receive commands using the RouterOS API protocol. The script can be used as a standalone command-line tool or as a module in your own Python scripts.
+`routeros_api.py` is a pure Python client for the MikroTik RouterOS API. It allows you to connect to a RouterOS device, authenticate, and send/receive commands using the RouterOS API protocol. The script can be used as a standalone command-line tool or as a module in your own Python scripts.
 
 ---
 
@@ -23,7 +23,7 @@
 ---
 
 ## Installation
-Copy `mikos_api.py` into your project directory.
+Copy `routeros_api.py` into your project directory.
 
 ---
 
@@ -33,7 +33,7 @@ Copy `mikos_api.py` into your project directory.
 Run from the command line:
 
 ```bash
-python3 mikos_api.py <host> [username] [password] [secure]
+python3 routeros_api.py <host> [username] [password] [secure]
 ```
 - `host`: RouterOS device address (IP or hostname)
 - `username`: (optional) Username (default: admin)
@@ -42,14 +42,14 @@ python3 mikos_api.py <host> [username] [password] [secure]
 
 Example:
 ```bash
-python3 mikos_api.py 192.168.88.1 admin mypassword yes
+python3 routeros_api.py 192.168.88.1 admin mypassword yes
 ```
 
 ### As a Module
 Import and use in your own scripts:
 
 ```python
-from mikos_api import ApiRos, open_socket
+from routeros_api import ApiRos, open_socket
 
 s = open_socket('192.168.88.1', 8728)
 api = ApiRos(s)
