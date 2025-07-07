@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Files
+
+test_mikos_api.py
+# Virtual environment
+env/
+venv/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python egg files
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# Test output
+*.out
+
+# Markdown backup
+*.md.save
+
+# Environment variables (keep secrets like passwords out of git)
+.env
+
+#Rule
+restriction.json
+restriction.py
